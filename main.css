@@ -1,0 +1,208 @@
+
+/* Reset de estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #cfe980;
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header, footer {
+    background-color: #000000;
+    color: #334cdb;
+    padding: 20px 0;
+    text-align: center;
+
+}
+.texto-titulo{
+    text-align: left; /* Alinha o texto à esquerda */
+    font-size: 60px; /* Define o tamanho da fonte em pixels */  
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+    font-size: 25px;
+}
+
+nav ul li a {
+    color: #004080;
+    text-decoration: none;
+}
+
+section {
+    padding: 40px 0;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+.carousel-item img {
+    height: 500px; /* Ajuste conforme necessário */
+    object-fit: cover; /* Para manter o aspecto da imagem */
+}
+
+/* Estilos para seção de destinos */
+.destino {
+    width: 100%;
+    margin-bottom: 30px;
+    text-align: center; /* Centraliza o texto */
+}
+
+.destino img {
+    width: 80%; /* Ajusta a largura para caber melhor em telas menores */
+    border-radius: 8px; /* Menor arredondamento para um visual mais moderno */
+    margin-bottom: 16px;
+}
+
+.destino p {
+    margin-right: 80px; /* Aumenta a margem direita do parágrafo para adicionar mais espaço entre as colunas */
+}
+
+/* Estilos para seção de buscar pacotes */
+#pacotes .container {
+    text-align: center; /* Centraliza o conteúdo horizontalmente */
+}
+
+#pacotes h2 {
+    margin-bottom: 20px; /* Adiciona espaço abaixo do título */
+}
+
+#pacotes form {
+    display: flex; /* Usa flexbox para alinhar os campos horizontalmente */
+    flex-wrap: wrap; /* Permite que os campos quebrem para a próxima linha se não houver espaço suficiente */
+    justify-content: center; /* Centraliza os campos horizontalmente */
+}
+
+#pacotes .campo {
+    width: calc(100% - 20%); /* Define uma largura para os campos */
+    margin: 10px ; /* Adiciona margem entre os campos */
+}
+
+#pacotes label {
+    display: block; /* Faz com que os rótulos ocupem uma linha inteira */
+    margin-bottom: 5px; /* Adiciona espaço abaixo dos rótulos */
+}
+
+#pacotes input[type="date"],
+#pacotes input[type="number"],
+#pacotes select {
+    width: 100%; /* Define a largura total para os campos de entrada */
+    padding: 10px; /* Adiciona preenchimento aos campos de entrada */
+    border: 1px solid #ccc; /* Adiciona uma borda ao redor dos campos */
+    border-radius: 5px; /* Adiciona bordas arredondadas aos campos */
+    margin-top: 5px; /* Adiciona espaço acima dos campos */
+}
+
+#pacotes button {
+    padding: 10px; /* Adiciona preenchimento ao botão */
+    background-color: #004080; /* Define a cor de fundo do botão */
+    color: #fff; /* Define a cor do texto do botão */
+    border: none; /* Remove a borda do botão */
+    border-radius: 5px; /* Adiciona bordas arredondadas ao botão */
+    cursor: pointer; /* Muda o cursor ao passar sobre o botão */
+    margin-top: 30px; /* Adiciona espaço acima do botão */
+    margin-bottom: 20px; /* Adiciona espaço abaixo do botão */
+}
+
+#pacotes button:hover {
+    background-color: #003366; /* Altera a cor de fundo quando o botão é hover */
+}
+
+/* Estilos para seção de depoimentos */
+.depoimento {
+    margin-bottom: 20px;
+}
+
+.depoimento p {
+    font-style: italic;
+}
+
+.depoimento span {
+    font-weight: bold;
+}
+
+/* Estilos para seção de contato */
+#contato form input,
+#contato form textarea {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: none;
+}
+
+#contato form button {
+    padding: 10px 20px;
+    background-color: #004080;
+    color:  #ccc;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#contato form button:hover {
+    background-color: #003366;
+}
+
+/* Estilos para seção de endereço */
+#endereco p {
+    margin-bottom: 10px;
+}
+
+/* Estilos para o rodapé */
+footer p {
+    font-size: 0.8em;
+}
+
+/* Estilos para responsividade */
+@media (max-width: 768px) {
+    .destino {
+        width: 100%;
+        margin-right: 0;
+    }
+}
+
+.social-links img{
+    height: 24px;
+    margin-left: 8px;
+}
+
+.social-links li {
+    display: inline;
+    margin-right: 8px;
+}
+
+.social-links li a {
+    text-decoration: none;
+    margin-left: 8px;
+}
+.social-containers {
+    text-align: center; /*Centraliza o conteúdo horizontalmente */
+}
+
+.mais{
+    display: none;
+}
